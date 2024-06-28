@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./sr/img/ICasei_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./sr/css/style.css">
+    <link rel="stylesheet" href="./sr/css/reset.css">
+    <title>MF</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <h1>Videos</h1>
+            <input type="button" id="videosButton" value="VÍDEOS">
+            <input type="button" id="favoritesButton" value="FAVORITOS">
+        </div>
+        <div class="box-2">
+            <div class="videos">
+                <h1>Busca de Vídeos do YouTube</h1>
+                <form id="searchForm">
+                    <input type="text" id="query" placeholder="Digite sua pesquisa">
+                    <button type="submit">Pesquisar</button>
+                </form>
+                <section class="video-section">
+                    <article class="video-container">
+                        <div id="results"></div>
+                    </article>
+                </section>
+            </div>
+            <div class="favorites" style="display: none;">
+                <h1>Favoritos</h1>
+                <div id="favorites"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./sr/js/index.js"></script>
+</body>
+</html>
