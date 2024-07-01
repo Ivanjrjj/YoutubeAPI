@@ -1,27 +1,41 @@
-
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'Inter', sans-serif;
     height: 100vh;
+    font-family: "PT Serif", serif;
 }
 
 .container {
     display: flex;
+    flex-direction: row;
     height: 100%;
     width: 100%;
 }
 
 .box-1 {
+    background-image: url(../img/playfavorite2.png);
+    background-position: right;
+    background-repeat: no-repeat;
     width: 250px;
-    height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    border-right: 1px solid #ccc;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #ffffff;
+}
+
+.box-2 {
+    background-image: url(../img/playfavorite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .box-1 input {
@@ -31,17 +45,200 @@ body {
     cursor: pointer;
 }
 
-.box-2 {
+.box-2 input {
+    padding: 1px;
+    margin: 10px 0;
+}
+
+.box-1 h1 {
+    font-size: 25px;
+    color: #000000b2;
+    font-family: "PT Serif", serif;
+}
+
+.box-2 h1 {
+    font-size: 25px;
+    color: #000000b2;
+    font-family: "PT Serif", serif;
+}
+
+.search {
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    font-weight: bold;
+    background: #a0a0a0c2;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(235, 232, 232, 0.61);
+    transition-duration: 0.30s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(167, 165, 165, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn-search {
+    background: #a0a0a0c2;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    padding: 3px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(235, 232, 232, 0.61);
+    transition-duration: 0.30s;
+}
+
+.btn-search:hover,
+.btn-search:focus,
+.btn-search:active {
+    box-shadow: 0 0 20px rgba(167, 165, 165, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.videos,
+.favorites {
     flex: 1;
-    height: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
-.video-item {
-    margin-bottom: 20px;
+.videos h2,
+.favorites h2 {
+    font-size: 15px;
+    color: #080707ce;
 }
-.video-item img {
-    max-width: 100%;
+
+.videos h1,
+.favorites h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.video-list,
+.favorite-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.video-item,
+.favorite-item {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    overflow: hidden;
+    text-align: center;
+}
+
+.video-item img,
+.favorite-item img {
+    width: 100%;
     height: auto;
+    display: block;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.add-favorite {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+
+.remove-favorite {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box-1 {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .box-1 input {
+        width: auto;
+    }
+
+    .video-item,
+    .favorite-item {
+        flex: 0 0 calc(50% - 20px);
+        /* 2 itens por linha */
+        max-width: calc(50% - 20px);
+        /* 2 itens por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    .box-1 {
+        padding: 10px;
+    }
+
+    .box-1 input {
+        width: 100%;
+    }
+
+    .video-item,
+    .favorite-item {
+        flex: 0 0 100%;
+        /* 1 item por linha */
+        max-width: 100%;
+        /* 1 item por linha */
+    }
+
+    .btn,
+    .btn-search {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .search input[type="text"] {
+        width: 100%;
+    }
+
+    .btn-search {
+        width: 100%;
+    }
 }
