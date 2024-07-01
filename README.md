@@ -1,5 +1,5 @@
 📺
-Icasei 2fase é uma aplicação web para buscar e gerenciar vídeos do YouTube. O projeto permite pesquisar vídeos, visualizar uma lista de resultados e marcar vídeos como favoritos. A interface inclui uma caixa de pesquisa e uma seção para exibir os vídeos favoritos.
+Search videos é uma aplicação web para buscar e gerenciar vídeos do YouTube. O projeto permite pesquisar vídeos, visualizar uma lista de resultados e marcar vídeos como favoritos. A interface inclui uma caixa de pesquisa e uma seção para exibir os vídeos favoritos.
 
 🚀 Funcionalidades
 Busca de Vídeos: Procure vídeos no YouTube com base em uma consulta de pesquisa.
