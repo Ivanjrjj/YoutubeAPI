@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     margin: 0;
     height: 100vh;
-    font-family: "PT Serif", serif;
+    font-family: "Margarine", sans-serif;
 }
 
 .container {
@@ -52,14 +52,14 @@ body {
 
 .box-1 h1 {
     font-size: 25px;
-    color: #000000b2;
-    font-family: "PT Serif", serif;
+    color: #5F9ED1;
+    font-family: "Margarine", sans-serif;
 }
 
 .box-2 h1 {
     font-size: 25px;
-    color: #000000b2;
-    font-family: "PT Serif", serif;
+    color: #5F9ED1;
+    font-family: "Margarine", sans-serif;
 }
 
 .search {
@@ -77,30 +77,34 @@ body {
 
 .btn {
     font-weight: bold;
-    background: #a0a0a0c2;
+    background: #ffffffc2;
     text-align: center;
-    color: #fff;
+    color: #5F9ED1;
+    border: #5F9ED1;
     border-radius: 7px;
+    font-family: "Margarine", sans-serif;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(235, 232, 232, 0.61);
+    box-shadow: 0 0 10px rgba(14, 64, 228, 0.61);
     transition-duration: 0.30s;
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
-    box-shadow: 0 0 20px rgba(167, 165, 165, 0.5);
+    box-shadow: 0 0 20px rgba(16, 3, 192, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 .btn-search {
-    background: #a0a0a0c2;
+
+    background: #fffdfdc2;
     border-radius: 7px;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     padding: 3px;
+    font-family: "Margarine", sans-serif;
     font-weight: bold;
-    color: #fff;
+    color: #5F9ED1;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(235, 232, 232, 0.61);
     transition-duration: 0.30s;
@@ -124,7 +128,10 @@ body {
 .videos h2,
 .favorites h2 {
     font-size: 15px;
-    color: #080707ce;
+    color:#5F9ED1;
+    background: rgba(255, 255, 255, 0.753);
+    
+    border-radius: 10px;
 }
 
 .videos h1,
