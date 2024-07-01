@@ -12,22 +12,6 @@ CSS3: Estilização da página, com uso de Flexbox para layout responsivo e ajus
 Bootstrap Icons: Ícones para a interface do usuário.
 Google Fonts: Tipografia personalizada para o design da página.
 
-graphql
-icasei-2fase/
-│
-├── index.html           # Página principal do projeto
-├── sr/
-│   ├── css/
-│   │   ├── reset.css    # Reset CSS para garantir consistência entre navegadores
-│   │   ├── style.css    # Estilos principais da aplicação
-│   │
-│   ├── img/
-│   │   ├── ICasei_Logo.png   # Logotipo da aplicação
-│   │   ├── playfavorite.png  # Imagem de fundo para a caixa de vídeos
-│   │   ├── playfavorite2.png # Imagem de fundo para a caixa de botões
-│   │
-│   └── js/
-│       ├── index.js     # Lógica JavaScript para interação com a API e gerenciamento de favoritos
 ✨ Estilos e Layout
 O projeto utiliza CSS para criar um layout flexível e responsivo. As principais seções e estilos são:
 
